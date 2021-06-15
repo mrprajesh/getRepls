@@ -32,8 +32,12 @@
 # ~ v0.1 - Tue, 14-Jun-2021, 21:29:12 IST
 # ~ * Basic Module to open tab done
 
-projectName = "SoloCoding2Princes-Quest"
 
+# SAMPLE URL
+#~https://replit.com/@LambdaCS1111/SoloCoding2Princes-Quest-cs20b087.zip
+
+projectName = "SoloCoding2Princes-Quest"
+teamsList = ['AlphaCS1111', 'BetaCS1111', 'GammaCS1111', 'DeltaCS1111', 'EpsilonCS1111', 'ZetaCS1111', 'EtaCS1111', 'ThetaCS1111', 'IotaCS1111', 'KappaCS1111', 'LambdaCS1111']
 
 ## EDIT below only for auto-generate roll numbers
 totalOnRoll = 87
@@ -50,7 +54,7 @@ rollNos = [ "cs20b001", "cs20b002", "cs20b003", "cs20b004", "cs20b005", "cs20b00
 # ~ 20,27,52,54,56,62,79 CSB Capsed
 # seq -f "cs20b%03g" 87 #shell trick
 
-teamsList = ['Alpha', 'Beta', 'Gamma', 'Delta', 'Epsilon', 'Zeta', 'Eta', 'Theta', 'Iota', 'Kappa', 'Lambda']
+
 
 def getRollNumbers(number):
   List = []
@@ -76,7 +80,7 @@ def main(args):
     rollNos = getRollNumbers(totalOnRoll)
 
   for i in range(len(rollNos)):
-    teamName = teamsList[i//8] + "CS1111"
+    teamName = teamsList[i//8] # + "CS1111"
     rollNum  = rollNos[i]
     url = f"https://replit.com/@{teamName}/{projectName}-{rollNum}.zip"
     #~https://replit.com/@LambdaCS1111/SoloCoding2Princes-Quest-cs20b087.zip
