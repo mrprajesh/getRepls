@@ -7,7 +7,7 @@ this script enables us to download the repls's via browser.
 We use this for downloading repls of CS1111 students in 2021.
 
 - Step 0: Login to replit.com using your account.
-- Step 1: Set the `projectName, teamsList`, and `rollNos`.
+- Step 1: Set the `projectName, teamsList`, and `rollNumbers`.
 - Step 2: Run the below
 ```
 python3 getRepls.py
@@ -20,8 +20,9 @@ your default download location if the repl URL is valid (not 404).
 ## How to run moss
 - Step1: Assuming downloaded `zip` files are present in `src` folder
 - Step2: Assuming you have moss script+account and `chmod+ moss` in `src`
-- Step3: Run the `run.sh`. Extracts code in to folder with `rollno/rollno.c` i.e `rollno` is replit `username`
-- Step4: `cd src` and run `moss -d cs*/*.c` -- all roll no start with `cs`
+- Step3: Run the `run.sh`. Extracts code in to folder with `rollNumber/rollNumber.c` i.e `rollNumber` is replit `username`
+- Step4: `cd src` and run `moss -d cs*/*.c` -- all our rollNumbers start with `cs`
+- Let's not add moss script publically.
 
 ## Prerequisite
 
